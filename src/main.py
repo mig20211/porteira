@@ -20,6 +20,8 @@ class Door:
 
     def show(self):
         print("you hold "+self.name)
+        print("but its locked")
+        print("nothing happen")
 
 
 class Button:
@@ -31,8 +33,9 @@ class Button:
         self.is_held = True
 
     def show(self):
-        print("you hold "+self.name)
-
+        print("you press "+self.name)
+        print("you tried to press the button but you're not strong enough ")
+        print("nothing happen")
 
 class Wall:
     def __init__(self):
@@ -45,7 +48,7 @@ class Wall:
     def show(self):
         print("you hold "+self.name)
         print("you try to pick up the wall but it is too heavy")
-
+        print('you let go of the wall')
 
 class Joao:
     def __init__(self):
